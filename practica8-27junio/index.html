@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS Completo</title>
+</head>
+<body>
+    <h1 id="bienvenido">Bienvenido!</h1>
+    <button onclick="iniciar()">Haz clic aquí</button>
+    <script>
+        var invitado="Invitado";
+        function iniciar() {
+            var saludo = document.getElementById("bienvenido");
+            alert("Bienvenido a Javascript");
+            let confirmar = confirm("¿Quieres ingresar tu nombre?");
+            if(confirmar) {
+                let nombre=prompt("¿Cuál es tu nombre?", "Escribe aquí tu nombre");
+                if (nombre) {
+                    saludo.innerText=creaSaludo(nombre);
+                } else {
+                    alert("Ok, eres un invitado");
+                    saludo.innerText=creaSaludo(invitado);
+                }
+            } else {
+                alert("Ok, eres un invitado");
+                saludo.innerText=creaSaludo(invitado);
+            }
+        }
+        function creaSaludo(nombre) {
+            return "Hola "+nombre+" 👋 Bienvenido a JavaScript";
+        }
+        
+    </script>
+</body>
+</html>

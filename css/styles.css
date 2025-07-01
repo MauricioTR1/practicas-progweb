@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+div {
+    box-sizing: border-box;
+    display: block;
+    width: max-content;
+    height: min-content;
+    background-color: aquamarine;
+    padding: 62px;
+    border: 40px solid green;
+    margin: 16px;
+    font-size: 100px;
+}
+
+
+/* P { selector de etiqueta
+    color: blue;
+    font-size: 20px;
+} */
+/* .destacado { selector de clase
+    background-color: yellow;
+    font-size: 20px;
+} */
+/* #principal { selector de id
+    font-size: 24px;
+    color: green;
+} */
+/* html { selector universal
+    font-family: sans-serif;
+} */
+/* h1, h2, h3 {
+    text-transform: uppercase;
+} */
+/* div p {
+    color: red;
+} */
+/* div > p {
+    color: yellow;
+} */
+/* h2 + p {
+    color:blueviolet
+} */
+/* h2 ~ p {
+    background-color: pink;
+} */
+/* input[type="password"] {
+    border: 2px solid red;
+} */

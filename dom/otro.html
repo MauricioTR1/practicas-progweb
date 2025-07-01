@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #miParrafo {
+            color: blue;
+            font-size: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="miParrafo">Presiona y cambia de color</p>
+    <button onclick="cambiarTexto()">Haz clic para cambiar el texto y el color</button>
+    <script>
+        function cambiarTexto() {
+            const parrafo=document.getElementById("miParrafo");
+            parrafo.textContet = "hola mundo";
+            parrafo.style.color="red";
+        }
+    </script>
+</body>
+</html>

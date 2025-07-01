@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="saludo">Hola Mundo</p>
+    <p id="mensaje">Hola Mundo</p>
+    <h1 id="titulo">Título</h1>
+    <button id="boton">Haz clic!</button>
+    <script>
+        const saludo = document.getElementById("saludo");
+        console.log(saludo.textContent);
+        document.getElementById("mensaje").textContent="Texto nuevo";
+        document.getElementById("titulo").style.color="red";
+        document.getElementById("titulo").style.fontSize="30px";
+        document.getElementById("boton").addEventListener("click", function() { alert("¡Botón presionado!") });
+        let nuevoParrafo=document.createElement("p");
+        nuevoParrafo.textContent="Soy un nuevo párrafo";
+        document.body.appendChild(nuevoParrafo);
+        let nuevoParrafo=document.createElement("p");
+        nuevoParrafo.textContent="Soy un nuevo párrafo";
+        document.body.appendChild(nuevoParrafo);
+        let elemento = document.getElementById("mensaje");
+        elemento.remove;
+    </script>
+</body>
+</html>

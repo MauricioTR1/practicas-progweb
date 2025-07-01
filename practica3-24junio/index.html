@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Curso de Astronomía</title>
+</head>
+<body>
+     <header>
+        <h1>Curso Intensivo de Astronomía</h1>
+        <p>Explora los confines del universo en casa</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#temario">Temario</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+     </header>
+     
+     <main>
+        <article id="inicio">
+            <h2>Sobre el Curso</h2>
+            <img src="https://img2.rtve.es/n/2237470" alt="Imagen del telecopio Espacial James Webb" width="350" height="250">
+            <p>Dentro de los beneficios del curso, encontrarás obtener conocimiento profundo acerca de la astronomía, así como resolver
+                las dudas que tengas sobre las estrellas y el universo, volviéndote así una persona más culta y estudiada sobre nuestro
+                maravilloso universo.
+            </p>
+            <p>
+                El contenido del curso es variado, tocando temas como la escala de los planetas, su composición, clasificación, incluso
+                la historia geológica y climatológica de la tierra.
+            </p>
+            <h2 id="temario">Temario del Curso</h2>
+            <ol>
+                <li>Introducción al cosmos</li>
+                <li>El sistema solar</li>
+                <li>Estrellas y Galaxias</li>
+                <li>Agujeros negros y Materia oscura</li>
+            </ol>
+            <h2 id="horarios">Horarios Semanales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Miércoles</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 10:00</td>
+                        <td>09:00 - 10:00</td>
+                        <td>09:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>10:00 - 11:00</td>
+                        <td>12:00 - 15:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <section id="registro">
+            <h2>Formulario de Inscripción</h2>
+            <form action="/inscribir" method="POST">
+                <label for="nombre_completo">Nombre completo:</label>
+                <input type="text" id="nombre_completo">
+                <br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+                <br>
+                <label for="nivel_exp">Nivel de Experiencia:</label>
+                <select name="nivel_exp" id="nivel_exp">
+                    <option value="principiante">Principiante</option>
+                    <option value="aficionado">Aficionado</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+                <br>
+                <label for="modalidad">Modalidad preferida</label>
+                <input type="radio" id="m_en_linea" name="modalidad_preferida" value="en_linea">
+                <label for="m_en_linea">En línea</label>
+                <input type="radio" id="m_presencial" name="modalidad_preferida" value="presencial">
+                <label for="m_presencial">Presencial</label>
+                <br>
+                <label for="comentarios">Comentarios o preguntas</label>
+                <br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                <br>
+                <label for="terminos" id="terminos">¿Aceptas los términos y condiciones?</label>
+                <input type="checkbox" id="terminos" name="terminos">
+                <br>
+                <button type="submit">Inscribirme ahora</button>
+            </form>
+        </section>
+
+     </main>
+     <footer>
+        <p>&copy; 2024 Academia Estelar. Todos los derechos reservados.</p>
+     </footer>
+
+</body>
+</html>
